@@ -53,7 +53,7 @@ app.get('/api/lembretes', (req, res, next) => {
     })
   });
 
-/*app.get('/api/lembretes/:id', (req, res, next) => {
+app.get('/api/lembretes/:id', (req, res, next) => {
   Lembrete.findById(req.params.id).then(lem => {
         if (lem){
           res.status(200).json(lem);
@@ -61,7 +61,7 @@ app.get('/api/lembretes', (req, res, next) => {
         else
           res.status(404).json({mensagem: "Lembrete não encontrado!"})
   })
-});*/
+});
 
 app.post('/api/lembretes', (req, res, next) => {
     const lembrete = new Lembrete({

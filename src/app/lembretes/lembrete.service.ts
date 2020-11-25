@@ -62,8 +62,7 @@ export class LembreteService {
 
   getLembrete (idLembrete: string){
     //return {...this.lembretes.find((lem) => lem.id === idLembrete)};
-    return this.HttpLembrete.get<{_id: string, titulo: string, dataCadastro: string, dataPrevista:
-      string,atividade:string}>(`http://localhost:3000/api/lembretes/${idLembrete}`);
+    return this.HttpLembrete.get<{_id: string, titulo: string, dataCadastro: string, dataPrevista: string, atividade: string}>(`http://localhost:3000/api/lembretes/${idLembrete}`);
     }
 
   atualizarLembrete (id: string, titulo: string, dataCadastro: string, dataPrevista: string,atividade: string){

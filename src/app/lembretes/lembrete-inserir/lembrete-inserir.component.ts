@@ -30,7 +30,7 @@ export class LembreteInserirComponent implements OnInit {
             titulo: dadosLem.titulo,
             dataCadastro: dadosLem.dataCadastro,
             dataPrevista: dadosLem.dataPrevista,
-            atividade: dadosLem.atividade,
+            atividade: dadosLem.atividade
             };
         });
       }
