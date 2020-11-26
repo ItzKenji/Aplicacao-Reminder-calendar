@@ -16,6 +16,8 @@ import { CabecalhoComponent } from './cabecalho/cabecalho.component';
 import { LembreteListaComponent } from './lembretes/lembrete-lista/lembrete-lista.component'
 import { LembreteInserirComponent } from './lembretes/lembrete-inserir/lembrete-inserir.component';
 import { EfeitoSombraDirective } from './efeito-sombra.directive';
+import { RodapeComponent } from './rodape/rodape/rodape.component';
+
 
 const routes: Routes = [
   { path: '', component: LembreteListaComponent },
@@ -30,7 +32,8 @@ const routes: Routes = [
     LembreteInserirComponent,
     CabecalhoComponent,
     LembreteListaComponent,
-    EfeitoSombraDirective
+    EfeitoSombraDirective,
+    RodapeComponent
   ],
   imports: [
     BrowserModule,

@@ -1,16 +1,16 @@
 <!--container geral para controle do inserir-->
 <div class="container-fluid">
-  <div class="row col-12 col-md-12 my-3">
+  <div class="row col-12  my-3">
    <!-- bloco do titulo agenda-->
-    <div class=" col-12   ">
+    <div class=" offset-1 offset-md-6 offset-sm-4 col ">
       <p id="tituloagenda">AGENDA</p>
-      <p id="frase">Ola -nome-, organize sua vida com mais facilidade</p>
+      <p id="frase">Ola, organize sua vida com mais facilidade</p>
       <p id="horario">{{data|date:'h:mm a '}}</p>
       <p id="data" >{{data|date:"dd/MMMM/yyy"}}</p>
     </div>
-
   <!--div para controle do form -->  
-    <div class="col-12" style="border-radius: 5px; background-color: aliceblue;">
+    <div class="col-12  col-lg-8 offset-lg-5 offset-1 offset-md-4 offset-sm-3 " 
+    style="border-radius: 5px; background-color: aliceblue;">
   <!--form para digitar o lembrete-->
   <form (submit)="onSalvarLembrete(lembreteForm)" #lembreteForm="ngForm" class="my-3" >
     <mat-form-field  style="background-color: aliceblue;">
@@ -25,7 +25,7 @@
         [ngModel]="lembrete?.titulo"
         #titulo="ngModel"
       />
-      <!--aplicacao de um if caso algo acoteca de errado-->
+      <!--aplicacao de um if caso algo aconteca de errado-->
       <mat-error *ngIf="titulo.invalid">Digite o titulo do lembrete válido</mat-error>
     </mat-form-field>
     <!--form para data lembrete com aplicacao de materialize-->
