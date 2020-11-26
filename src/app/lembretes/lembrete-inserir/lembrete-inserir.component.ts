@@ -14,6 +14,9 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
 
 
 export class LembreteInserirComponent implements OnInit {
+  //aplicacao de pipe para controle de data e local
+  data =new Date();
+
   private modo: string = "criar";
   private idLembrete: string;
   public lembrete: Lembrete;
